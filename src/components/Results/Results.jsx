@@ -1,9 +1,12 @@
-import { calculateInvestmentResults, formatter } from '../util/investment'
+import { calculateInvestmentResults, formatter } from '../../util/investment'
+import classes from './Results.module.css'
+
 export default function Results({ userInput }) {
     console.log(calculateInvestmentResults(userInput))
     const result = calculateInvestmentResults(userInput)
     const intialInvestment = result[0].valueEndOfYear - result[0].interest - result[0].annualInvestment
-    return (<table id="result">
+    return (
+        <table className={classes.result}>
         <thead>
             <tr>
                 <th>Year</th>

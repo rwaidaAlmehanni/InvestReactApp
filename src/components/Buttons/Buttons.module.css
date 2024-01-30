@@ -1,0 +1,30 @@
+.button {
+  font: inherit;
+  border: 1px solid #303b37;
+  background: radial-gradient(#303b37, #1a1f1d);
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+.button:hover,
+.button:active {
+  background: #1a1f1d;
+  border-color: #1a1f1d;
+}
+
+.button-reset {
+    border-color: #ffffff;
+    background: transparent;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

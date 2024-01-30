@@ -1,8 +1,10 @@
+import classes from './UsersInputs.module.css'
+import Buttons from '../Buttons/Buttons'
 
 export default function UserInputs({ userInput, handleChange }) { 
     return (
-        <section id="user-input">
-            <div className="input-group">
+        <section className={classes['user-input']}>
+            <div className={classes["input-group"]}>
                 <p>
                    <label>Initial Investment</label>
                     <input type="number"
@@ -18,7 +20,7 @@ export default function UserInputs({ userInput, handleChange }) {
                         onChange={(e) => handleChange('annualInvestment', e.target.value)}  />
                 </p>
             </div>
-            <div className="input-group">
+            <div className={classes["input-group"]}>
                 <p>
                    <label>Expected Return</label>
                     <input type="number"
@@ -35,6 +37,7 @@ export default function UserInputs({ userInput, handleChange }) {
                     />
                 </p>
             </div>
+            <Buttons />
         </section>
     )
 }
